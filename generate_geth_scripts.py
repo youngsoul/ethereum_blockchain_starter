@@ -17,10 +17,10 @@ when you need to start new:
 
 
 """
-mistpath = ""
-datadir = ""
-networkid = ""
-genesisfile = ""
+mistpath = "/Applications/Mist.app/Contents/MacOS/Mist"
+datadir = "/Users/youngsoul/blockchain/data"
+networkid = "1999"
+genesisfile = "CustomGenesis.json"
 
 
 def create_sh_file(template_filename, target_file):
