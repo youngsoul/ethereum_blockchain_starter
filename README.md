@@ -128,3 +128,11 @@ pip install -r requirements.txt
 cd PythonClient
 python OpenAuctionCLI.py
 ```
+
+Before you can run the CLI, you will need to open the file and add the
+following:
+
+* The address for each of the three accounts.
+* the contract ABP
+* the contract address
+* the path to the geth file
