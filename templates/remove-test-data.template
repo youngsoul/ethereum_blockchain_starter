@@ -1,0 +1,11 @@
+#!/bin/bash
+DIR="{{datadir}}"
+
+if [ -d "$DIR" ]
+then
+    geth removedb --datadir {{datadir}}
+else
+    echo "Data directory does not exist"
+fi
+
+

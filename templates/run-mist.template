@@ -1,0 +1,12 @@
+#!/bin/bash
+
+FILE="{{datadir}}/geth.ipc"
+MFILE="{{mistpath}}"
+
+if [ -e "$FILE" ] && [ -e "$MFILE" ]
+then
+	{{mistpath}} --rpc {{datadir}}/geth.ipc
+else
+	echo "You must start your local geth node first to generate the geth.ipc file"
+fi
+

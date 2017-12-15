@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR="{{datadir}}"
+
+if [ -d "$DIR" ]
+then
+    geth --networkid {{networkid}} --nodiscover --datadir {{datadir}} --rpc --rpcaddr 0.0.0.0  --rpcapi "db,personal,eth,net,web3" --rpccorsdomain "*"
+else
+    echo "Data directory does not exist"
+fi

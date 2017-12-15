@@ -1,0 +1,12 @@
+#!/bin/bash
+DIR="{{datadir}}"
+GFILE="{{genesisfile}}"
+
+if [ -d "$DIR" ] && [ -e "$GFILE" ]
+then
+    geth --networkid {{networkid}} --nodiscover --datadir {{datadir}} init {{genesisfile}}
+else
+	echo "You must start your local geth node first to generate the geth.ipc file"
+fi
+
+

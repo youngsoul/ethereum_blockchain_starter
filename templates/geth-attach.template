@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILE="{{datadir}}/geth.ipc"
+
+if [ -e "$FILE" ]
+then
+	geth attach ipc:{{datadir}}/geth.ipc
+else
+	echo "You must start your local geth node first to generate the geth.ipc file"
+fi
+
