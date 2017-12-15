@@ -45,7 +45,9 @@ and then setup a symlink like:
 ```ln -s geth geth-1.7.3```
 
 In your .profile add:
+
 GETH_HOME=~/Applications/geth
+
 PATH=$GETH_HOME:$PATH; export PATH
 
 
